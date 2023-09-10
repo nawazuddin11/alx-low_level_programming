@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
 	char  n = 'z';
@@ -17,4 +15,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}	
+}
