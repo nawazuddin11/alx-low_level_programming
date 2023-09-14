@@ -1,28 +1,25 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * print_sign - chacking positive or negative
+ * n - is a parameter 
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 if is positive , -1 if negative and 0 other wise
  */
 int print_sign(int n)
 {
-	if (n > 0)
+	if (n < 0)
 	{
-		_putchar(43);
+		_putchar('+');
 		return (1);
 	}
-	else if (n < 0)
+	else if (n > 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		return (-1);
 	}
 	else
 	{
-		_putchar(48);
 		return (0);
 	}
-	_putchar('\n');
 }
