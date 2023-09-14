@@ -1,26 +1,21 @@
 #include "main.h"
-
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_alphabet_x10 - print alphabets 10  times
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
-	int j = 1;
-	
-	while (j <= 10)
-	{
-		char c = 'a';
+	int i = 1;
+	int j = 97;
 
-		while (c <= 'z')
+	while (i <= 10)
+	{
+		while (j <= 122)
 		{
-			_putchar(c);
-			c++;
+			_putchar(j);
+			j++;
 		}
+		_putchar('\n');
+		i++;
 	}
-	_putchar('\n');
-	j++;
 }
