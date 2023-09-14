@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * _putchar - writes the character c to stdout
@@ -9,7 +9,7 @@
  */
 int _islower(int c)
 {
-	if (c <= 97 && <= 122)
+	if (c >= 97 && <= 122)
 	{
 		return (1);
 	}

@@ -1,13 +1,11 @@
-#include <unistd.h>
-/**
- * main - Entey point
- *
- * printing _putchar using _outchar function
- *
- * Retunr: Alaways 0 (success)
- */
+#include "main.h"
 
-int main (void)
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -15,8 +13,8 @@ int main (void)
 	_putchar('t');
 	_putchar('c');
 	_putchar('h');
-	_putcahr('a');
 	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
