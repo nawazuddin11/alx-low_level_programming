@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - print alphabet
- * &c - is the checker and is intiger
+ * @c: - is the checker and is intiger
  * Return: 1 for lowercase and uppercase if  is true else will return 0
  */
 int _isalpha(int c)
