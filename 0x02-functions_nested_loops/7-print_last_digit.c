@@ -1,25 +1,13 @@
 #include "main.h"
-
 /**
- * _print_last_digit - rr
- * @c: The character to print
- *
- * Return: int 
- * On error, -1 is returned, and errno is set appropriately.
+ * print_last_digit - print last digit of a nmuber
+ * @n: is the number to print its last digit
+ * Return: int
  */
 int print_last_digit(int n)
 {
-	int l;
+	int i;
 
-	l = n % 10;
-	if (l < n)
-	{
-		_putchar(-l + 48);
-		return (-l);
-	}
-	else
-	{
-		_putchar(l + 48)
-			return (l);
-	}
+	i = n % 10;
+	return (i);
 }
