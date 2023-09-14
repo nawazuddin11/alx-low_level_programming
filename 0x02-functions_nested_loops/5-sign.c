@@ -1,25 +1,24 @@
 #include "main.h"
-
 /**
- * print_sign - chacking positive or negative
- * n - is a parameter 
- *
- * Return: 1 if is positive , -1 if negative and 0 other wise
+ * print_sign - check for sign if a nmuber
+ * @n:is the character to check
+ * Return:int
  */
 int print_sign(int n)
 {
-	if (n < 0)
+	if (n > 0)
 	{
-		_putchar('+');
+		_putchar(43);
 		return (1);
 	}
-	else if (n > 0)
+	else if (n < 0)
 	{
-		_putchar('-');
+		_putchar(45);
 		return (-1);
 	}
 	else
 	{
+		_putchar(48);
 		return (0);
 	}
 }
