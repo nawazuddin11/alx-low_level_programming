@@ -1,11 +1,7 @@
-#include <unistd.h>
-
+#include "main.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * jack_bauer - printing time
+ * Return: void
  */
 void jack_bauer(void)
 {
@@ -13,9 +9,9 @@ void jack_bauer(void)
 
 	for (a = 0; a <= 2; a++)
 	{
-		for (b = 0; b<= 9; b++)
+		for (b = 0; b <= 9; b++)
 		{
-			for (c = 0; c<= 5; c++)
+			for (c = 0; c <= 5; c++)
 			{
 				for (d = 0; d <= 9; d++)
 				{
