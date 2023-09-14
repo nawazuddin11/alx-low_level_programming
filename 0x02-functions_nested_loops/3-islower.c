@@ -1,16 +1,14 @@
 #include "main.h"
+
 /**
- * _islower - check lowexase
- * Return: int 
+ * _islower - check for upper case
+ * @c: is the charcter to print
+ * Return: int
  */
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
+	if (c >= 65 && c <= 90)
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
