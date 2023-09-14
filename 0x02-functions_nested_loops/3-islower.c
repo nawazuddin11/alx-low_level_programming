@@ -1,15 +1,11 @@
 #include "main.h"
-
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _islower - check if alphabet is in lowercase
+ * Return: int 
  */
 int _islower(int c)
 {
-	if (c >= 97 && <= 122)
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
@@ -17,5 +13,4 @@ int _islower(int c)
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
