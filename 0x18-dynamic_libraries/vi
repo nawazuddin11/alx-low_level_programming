@@ -1,0 +1,25 @@
+#include "main.h"
+#include <string.h>
+#include <unistd.h>
+
+int _putchar(char c) { return write(1, &c, 1); }
+int _islower(int c) { return (c >= 'a' && c <= 'z'); }
+int _isalpha(int c) { return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')); }
+int _abs(int n) { return (n < 0 ? -n : n); }
+int _isupper(int c) { return (c >= 'A' && c <= 'Z'); }
+int _isdigit(int c) { return (c >= '0' && c <= '9'); }
+int _strlen(char *s) { int i = 0; while (s[i]) i++; return i; }
+void _puts(char *s) { while (*s) _putchar(*s++); _putchar('\n'); }
+char *_strcpy(char *dest, char *src) { char *tmp = dest; while ((*dest++ = *src++)); return tmp; }
+int _atoi(char *s) { return 0; }
+char *_strcat(char *dest, char *src) { char *r = dest; while (*dest) dest++; while ((*dest++ = *src++)); return r; }
+char *_strncat(char *dest, char *src, int n) { char *r = dest; while (*dest) dest++; while (n-- && (*dest++ = *src++)); *dest = '\0'; return r; }
+char *_strncpy(char *dest, char *src, int n) { char *r = dest; while (n-- && (*dest++ = *src++)); return r; }
+int _strcmp(char *s1, char *s2) { while (*s1 && (*s1 == *s2)) s1++, s2++; return *(unsigned char*)s1 - *(unsigned char*)s2; }
+char *_memset(char *s, char b, unsigned int n) { for (unsigned int i = 0; i < n; i++) s[i] = b; return s; }
+char *_memcpy(char *dest, char *src, unsigned int n) { for (unsigned int i = 0; i < n; i++) dest[i] = src[i]; return dest; }
+char *_strchr(char *s, char c) { while (*s && *s != c) s++; return (*s == c ? s : NULL); }
+unsigned int _strspn(char *s, char *accept) { unsigned int i = 0; while (*s && strchr(accept, *s++)) i++; return i; }
+char *_strpbrk(char *s, char *accept) { while (*s) { if (strchr(accept, *s)) return s; s++; } return NULL; }
+char *_strstr(char *haystack, char *needle) { int len = _strlen(needle); while (*haystack) { if (!strncmp(haystack, needle, len)) return haystack; haystack++; } return NULL; }
+
